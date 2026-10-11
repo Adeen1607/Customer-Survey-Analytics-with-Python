@@ -64,3 +64,25 @@ Python, pandas, NumPy, Matplotlib, Squarify, Excel ingestion, data validation, s
 ## Responsible interpretation
 
 This repository is a portfolio exercise in analytical workflow design. The original sample is small and the expanded rows are simulated independently; therefore, the charts demonstrate reporting technique rather than statistically reliable market conclusions. See [the methodology](docs/METHODOLOGY.md) before using or presenting any result.
+
+
+## Rebuild the reading edition
+
+```bash
+python -m pip install -r requirements-research.txt
+python scripts/build_research_site.py
+```
+
+This renders saved notebook outputs without rerunning model training or external APIs. To refresh findings, run the analysis commands above first, update `reports/research-findings.md`, and rebuild.
+
+<!-- research-edition:start -->
+## Research edition
+
+[Research report and final visual results](research/report.md) · [Browser-ready notebook catalogue](research/notebooks.html)
+
+The original survey workbooks are a small observed sample. DataModeling.ipynb expands them with independently simulated binary observations; Data_Analysis.ipynb plots expanded observations. Those charts demonstrate visual reporting only. They do not strengthen population inference; use separately labelled original-sample summaries for empirical interpretation.
+
+
+The `research/` folder contains a professional static reading edition. The Pages workflow deploys it after GitHub Pages is enabled with **GitHub Actions** as the publishing source. Intended URL: `https://adeen1607.github.io/Customer-Survey-Analytics-with-Python/`. Deployment status must be checked in Actions before treating that address as live.
+
+<!-- research-edition:end -->

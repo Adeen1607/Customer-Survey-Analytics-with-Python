@@ -1,0 +1,39 @@
+{
+  "repository": "Adeen1607/Customer-Survey-Analytics-with-Python",
+  "review_date": "2026-10-11",
+  "evidence_note": "The original survey workbooks are a small observed sample. DataModeling.ipynb expands them with independently simulated binary observations; Data_Analysis.ipynb plots expanded observations. Those charts demonstrate visual reporting only. They do not strengthen population inference; use separately labelled original-sample summaries for empirical interpretation.\n",
+  "inputs": [
+    {
+      "path": "product_results_expanded.xlsx",
+      "sha256": "01a4fa515a14a840dd6d62311fe923ddca1b8115f7aed43c1c68f5d014f00151"
+    },
+    {
+      "path": "product_results.xlsx",
+      "sha256": "98a59508c5a4ac0447331c50a399876e543793fd06fdcf8fac5a17cc27e0548b"
+    },
+    {
+      "path": "department_results.xlsx",
+      "sha256": "5b6a90df042bc8a235fc00808496949818bf37f18838f864845757abec08f89e"
+    },
+    {
+      "path": "department_results_expanded.xlsx",
+      "sha256": "96033dc9c953886cfd100500cfee79c32ef65ae60ef917d4a3eff28f35fe9b93"
+    },
+    {
+      "path": "Data_Analysis.ipynb",
+      "sha256": "21eaf648d78b1a0bc993ef8cad3d7faf8b978eaf46ae8ae21f4e261029c20ac0"
+    },
+    {
+      "path": "DataModeling.ipynb",
+      "sha256": "863e93b8c74e1871788e74a378c6ff9a83f6b6b68482f84c2a96d131bc88b531"
+    },
+    {
+      "path": "reports/department-original-summary.csv",
+      "sha256": "cf2d439488872bf386be11c9103d177ee76ec74585d6412aba2a241887be30e6"
+    },
+    {
+      "path": "reports/product-original-summary.csv",
+      "sha256": "eb8b10ec421888d200652c91f7d1aa31a3eecfa8243227f80d1b5ccc1e5e06fe"
+    }
+  ]
+}
