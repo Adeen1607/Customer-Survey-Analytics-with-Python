@@ -40,6 +40,8 @@ def load_totals(path: Path, table_name: str) -> pd.Series:
         raise ValueError(f"{table_name}: non-binary indicator columns: {invalid}")
 
     totals = indicators.fillna(0).sum().sort_values(ascending=False)
+    if totals.empty or totals.sum() == 0:
+        raise ValueError(f"{table_name}: no positive indicator responses to visualize")
     totals.index.name = "category"
     totals.name = "response_count"
     return totals
